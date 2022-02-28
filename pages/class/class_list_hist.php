@@ -42,7 +42,7 @@ function Header()
     // //cell(width,height,text,border,end line,[align])
     $this->Cell(0,6,'CLASS LIST',0,1,'C');
     $this->SetFont('Arial','B',10);
-    $this->Cell(0,4,$_SESSION['active_sem'].' '.$_SESSION['active_acad'],0,1,'C');
+    $this->Cell(0,4,$_GET['sem'].' '.$_GET['ay'],0,1,'C'); //added
 
     $this->Ln(3);
 $que3 =mysqli_num_rows(mysqli_query($db,
